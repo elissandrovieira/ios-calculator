@@ -5,3 +5,98 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+    #main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url(../img/iphone.png);
+        background-size: contain;
+        height: 601px;
+        width: 300px;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 50px;
+        box-shadow: 4px 6px 12px 0px #00000082;
+
+        #container{
+            display: flex;
+            flex-direction:column;
+            justify-content: end;
+            height: 100%;
+            padding-bottom: 30px;
+
+            #display{
+                text-align: right;
+                margin: 10px;
+                font-weight: 300;
+
+                p{
+                    opacity: 50%;
+                    margin-bottom: 50px;
+                }
+            }
+
+            #buttons{
+                ul{
+                    li{
+                        display: flex;
+                        list-style: none;
+                        
+                        button{
+                            background-color: #313131;
+                            width: 55px;
+                            height: 55px;
+                            font-size: 20px;
+                            border: none;
+                            border-radius: 50%;
+                            margin: 3px;
+                            color: white;
+                            cursor: pointer;
+                            transition: 200ms;
+
+                            &:hover{
+                                filter: contrast(120%);
+                            }
+                        }
+
+                        .light-grey {
+                           background-color: #9F9F9F;
+                           color: black;
+                            
+                           &:hover{
+                                filter: contrast(200%);
+                           }
+                        }
+
+                        .orange{
+                            background-color: #F69906;
+
+                            &:hover{
+                                filter: contrast(200%);
+                            }
+                            
+                        }
+
+                        #zero{
+                            width: 120px;
+                            border-radius: 30px;
+                            text-align: start;
+                            padding-left: 20px;
+                        }
+
+                        
+                    }
+                }
+            }
+        }
+    }
+}
